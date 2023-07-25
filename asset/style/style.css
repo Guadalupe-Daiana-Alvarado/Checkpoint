@@ -1,0 +1,188 @@
+:root{
+    --gris-oscuro: #d1d1d1;
+    --verde: #4caf50;
+    --gris-claro: #ccc;
+    --negro: black ;
+}
+
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--gris-claro);
+}
+
+header{
+    width: 100%;
+    height: 15vh;
+    background-image: url(../image/redes-neuronales.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h1{
+    color: white;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: x-large;
+    width: 30vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+main{
+    width: 100%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#section-aboutIA{
+    width: auto;
+    min-height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+#section-article{
+    min-width: 95%;
+    min-height: 30rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; 
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+.card{
+    background-color: var(--gris-oscuro);
+    box-shadow: 5px 5px 2px;
+    width: 18rem;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 2rem;
+    border: 1rem;
+
+}
+.card img{
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+.card h3{
+    padding: 1rem;
+}
+.card button{
+    background-color: var(--gris-claro);
+    padding: 0.3rem;
+    display: flex;
+    align-self: center;
+    border: 1px solid gray;
+}
+#section-List{
+    min-width: 40vh;
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+li{
+    padding: 0.2rem;
+}
+
+#section-table{
+display: flex;
+flex-direction: column;
+align-items: center;
+min-width: 40vh;
+padding-bottom: 1rem;
+}
+
+#section-table h4{
+    padding: 1rem;
+}
+
+table{
+    border: 1px solid black;
+    border-collapse: collapse; 
+    width: 40vh;
+    height: 18vh;
+}
+tr, td{
+    border: 2px solid black;
+    padding: 0.5rem;
+}
+
+footer{
+    height: 10vh;
+    background-color: var(--verde);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+footer h5{
+    margin-left: 1rem;
+}
+
+/* PRIMER M.Q */
+@media (max-width:620px) and (min-width:430px){
+
+    nav{
+        width: 50vh;
+    }
+    footer{
+        flex-direction: column;
+        height: 20vh;
+    }
+}
+
+@media (max-width:429px) and (min-width:319px){
+    
+    header{
+        height: 20vh;
+    }
+
+    nav{
+        flex-direction: column;
+    }
+    nav a{
+        
+        background-color: rgba(128, 128, 128, 0.368);
+    }
+    footer{
+        flex-direction: column;
+        width: auto;
+        height: 30vh;
+    }
+
+}
